@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style type="text/css">
+body {
+    background-image: url(sanic.png);
+}
+body,td,th {
+    font-size: 20px;
+    color: rgba(255,255,255,1);
+}
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onLoad="MM_preloadImages('practicas 1.png')">
+<canvas width="1501" height="851" id="lienzo"></canvas>
+<table width="1024" border="1" align="center">
+  <tbody>
+    <tr>
+      <td colspan="2" align="center"><a href="practicas.html" target="_self" onMouseOver="MM_swapImage('Practicas','','practicas 1.png',1)" onMouseOut="MM_swapImgRestore()"><img src="Practicas .png" alt="" width="352" height="135" id="Practicas"></a></td>
+    </tr>
+    <tr>
+		<td colspan="2" align="center"><h1><strong>Conclusiones</strong></h1></td>
+    </tr>
+    <tr>
+      <td width="500"><strong>Aguilar Calvo Jorge Eduardo</strong></td>
+      <td width="508"><p><strong>La codificación de esta página web fue algo compleja sin  duda, más que nada por el hecho de que era algo que no habíamos visto, por lo  que fue necesario visualizar tutoriales sobre como programar este elemento, después  de hacer el Código batallamos para que este se viera en la pantalla más aparte  el fondo por lo que tuvimos que hacer unos ajustes, además de quitarle el fondo  a la imagen de Sonic, por último se vio un poco compleja la forma en que se  ejecutara ya que no se alcanzaba a distinguir bien ya en Google, por lo que le  hicimos varios cambios a la imagen, pero fuera de esto, fue una buena experiencia  y sin duda de gran ayuda para la próxima actividad. </strong></p></td>
+    </tr>
+    <tr>
+      <td><strong>García Chapa  Lyla Debany</strong></td>
+      <td width="508"><p><strong>El elemento canvas es algo bastante llamativo con el que  cuentan las páginas web y aprender sobre él es muy bueno debido que podemos  usarla en cualquier momento que lo creamos necesario. Siempre aprender de temas  nuevos en cada práctica es increíble debido a todos los nuevos conocimientos  que tenemos ahora y tendremos al terminar el semestre. </strong></p></td>
+    </tr>
+    <tr>
+      <td><strong>Mendez Garcia Axel Abdallab</strong></td>
+      <td width="508"><p><strong>Cada nueva herramienta aprendida es bien aceptada ya que nos  ayuda a ampliar nuestro conocimiento y a mejorar nuestra creatividad porque nos  permite imaginar nuevas cosas que antes no pensábamos posibles como lo  realizado en esta práctica y con esto y practica podremos hacer más y mejores páginas  web.</strong></p></td>
+    </tr>
+    <tr>
+      <td><strong>Reyna Aldape Adrián Francisco</strong></td>
+      <td width="508"><p><strong>En conclusión, fue algo complejo el poder perfeccionar  nuestra práctica, pero al investigar sobre cómo hacerlo nos resolvió muchas  dudas, una vez más, HTML nos sigue sorprendiendo con los recursos que nos  brinda al utilizarlo. </strong></p></td>
+    </tr>
+    <tr>
+      <td><strong>Valerio Gómez Andrea Estefania</strong></td>
+      <td width="508"><p><strong>Como con conclusión opino que esta práctica sin duda fue  mucho más compleja pues no había utilizado estos recursos pero con ayuda de  videos logramos aprender un poco más acerca de este tema. </strong></p></td>
+    </tr>
+  </tbody>
+</table>
+<script>
+		var cnv, ctx, pos_x =0, img;
+
+		function anim() {
+			ctx.clearRect(0, 0, 1501, 1020);
+			ctx.drawImage(img, pos_x, 250);
+			pos_x += 1;
+			setTimeout(anim, 25);
+		}
+
+		window.onload = function() {
+			img = new Image();
+			img.src = 'sonic.png';
+			cnv = document.getElementById('lienzo');
+			ctx = cnv.getContext('2d');
+			// iniciar la animación
+			anim();
+		}
+	</script>
+</body>
+</html>
