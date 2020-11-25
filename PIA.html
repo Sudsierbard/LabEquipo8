@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Equipo 8 Laboratorio de Programacion Web</title>
+<style type="text/css">
+body,td,th {
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+    font-style: inherit;
+    font-weight: lighter;
+}
+body {
+    background-image: url(Fondo2.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+a:link {
+    text-decoration: none;
+    color: rgba(0,0,0,1);
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: none;
+}
+a {
+    font-size: 24px;
+}
+</style>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('practicas 1.png')">
+<table width="1024" border="1" align="center">
+  <tbody>
+    <tr>
+      <td colspan="5" align="center" valign="middle"><a href="practicas.html" target="_self" onMouseOver="MM_swapImage('practicas2','','practicas 1.png',1)" onMouseOut="MM_swapImgRestore()"><img src="Practicas .png" alt="" width="352" height="135" id="practicas2"></a></td>
+    </tr>
+    <tr>
+		<td colspan="5" align="center" valign="middle"><h1>PIA</h1></td>
+    </tr>
+    <tr>
+      <td colspan="5" align="center" valign="middle">
+		  
+		  <p>Testimonios y Reflexiones</p></td>
+    </tr>
+    <tr>
+		<td align="center" valign="middle">Aguilar Calvo Jorge Eduardo</td>
+		<td align="center" valign="middle">García Chapa  Lyla Debany</td>
+		<td align="center" valign="middle">Mendez Garcia Axel Abdallab</td>
+		<td align="center" valign="middle">Reyna Aldape Adrián Francisco</td>
+		<td align="center" valign="middle">Valerio Gómez Andrea Estefania</td>
+    </tr>
+    <tr>
+		<td align="center" valign="middle">&nbsp;</td>
+		<td align="center" valign="middle">&nbsp;</td>
+		<td align="center" valign="middle">&nbsp;</td>
+		<td align="center" valign="middle">&nbsp;</td>
+		<td align="center" valign="middle">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="center" valign="middle"><audio title="Reflexion de Jorge" controls="controls" >
+        <source src="audio1.ogg" type="audio/ogg">
+      </audio></td>
+      <td align="center" valign="middle"><audio title="Reflexion de Debany" controls="controls" >
+        <source src="audio2.ogg" type="audio/ogg">
+      </audio></td>
+      <td align="center" valign="middle">&nbsp;</td>
+      <td align="center" valign="middle"><audio title="Reflexion de Adrian" controls="controls" >
+        <source src="audio3.ogg" type="audio/ogg">
+      </audio></td>
+      <td align="center" valign="middle"><audio title="Reflexion de Andrea" controls="controls" >
+        <source src="audio4.mp3" type="audio/mp3">
+      </audio></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
